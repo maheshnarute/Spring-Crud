@@ -21,7 +21,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>11</java.version>
 		<tomcat.version>8.5.8</tomcat.version>
-		<start-class>com.spring.crud02.Crud02Application</start-class>
+		<start-class>com.example.SpringCurd1.student.SpringCurd1Application </start-class>
 	</properties>
 
 	<dependencies>

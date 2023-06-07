@@ -9,22 +9,25 @@ import java.util.List;
 public class StudentController {
     @Autowired
    private StudentService studentService;
-    @GetMapping("/map")
+    @GetMapping("/student")
     public List<Student>getcontroller( ){
         return this.studentService.getList();
     }
     @PostMapping("/student")
     public Student student1(@RequestBody Student std){
-        return this.studentService.student(std) ;
+        Student s=this.studentService.addstudent(std);
+        return s;
     }
     @DeleteMapping("student/{id}")
     public void infodelete(@PathVariable ("id")int id){
        this.studentService.deleteinfo(id);
     }
     @PutMapping("student/{id}")
-    public void putinfo(@RequestBody Student student, @PathVariable("id") int id){
-        this.studentService.infoput(student ,id);
+    public Student putinfo(@RequestBody Student student,@PathVariable("id") int id){
+        this.studentService.infoput(student,id);
+        return student;
     }
+
 
 
 }

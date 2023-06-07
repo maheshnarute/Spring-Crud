@@ -20,13 +20,13 @@ public class StudentService {
     public List<Student>getList(){
         return list;
     }
-    public Student student(Student s){
+    public Student addstudent(Student s){
         list.add(s);
         return s;
     }
     public void deleteinfo(int id){
         Student student;
-        student=list.stream().filter(e->e.getId()!=id).findFirst().get();
+        list=list.stream().filter(e->e.getId()!=id).collect(Collectors.toList());
       }
       public void infoput(Student student, int id){
         list.stream().map(e->{
