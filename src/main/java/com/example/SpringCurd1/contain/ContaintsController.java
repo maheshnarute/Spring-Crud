@@ -54,7 +54,7 @@ public class ContaintsController {
 
         return ResponseEntity.ok("Deleted successfully");
     }
-    @GetMapping("/byc/{contact}")
+    @GetMapping("/bycontact/{contact}")
     ResponseEntity<?> getContaintsByContact(@PathVariable String contact) throws Exception {
         List<Containts> containtsList = containtsService.getByContact(contact).getBody();
         if (containtsList != null && !containtsList.isEmpty()) {
@@ -63,13 +63,5 @@ public class ContaintsController {
             return ResponseEntity.notFound().build();
         }
     }
-//    @GetMapping("/bycontact/{contact}")
-//    ResponseEntity<?> getContaintsByContact(@PathVariable String contact) throws Exception {
-//        return ResponseEntity.ok(containtsService.getByContact(contact));
-//    }
-//    @GetMapping("/byc/{contact}")
-//        ResponseEntity<List<Containts>>getbycontact(@PathVariable("contact") String contact)throws Exception{
-//        return ResponseEntity.ok((List<Containts>) containtsService.getByContact(contact));
-//        }
 
 }
