@@ -1,4 +1,4 @@
-package com.example.SpringCurd1.contain;
+package com.example.Springcrud.contain;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

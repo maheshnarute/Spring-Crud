@@ -1,4 +1,4 @@
-package com.example.SpringCurd1.contain;
+package com.example.Springcrud.contain;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,9 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import javax.persistence.Id;
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
 @Controller

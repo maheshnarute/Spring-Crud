@@ -1,4 +1,4 @@
-package com.example.SpringCurd1.student;
+package com.example.Springcrud.student;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

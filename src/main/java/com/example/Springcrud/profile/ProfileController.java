@@ -1,4 +1,4 @@
-package com.example.SpringCurd1.profile;
+package com.example.Springcrud.profile;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

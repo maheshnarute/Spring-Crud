@@ -1,21 +1,19 @@
-package com.example.SpringCurd1.contain;
+package com.example.Springcrud.profile;
 
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Type;
-
 import javax.persistence.*;
 import java.util.UUID;
-
-@Setter
 @Getter
-@AllArgsConstructor
-@NoArgsConstructor(force = true)
+@Setter
 @ToString
+@AllArgsConstructor
+@NoArgsConstructor
 @Builder
 @Entity
-@Table(name = "containts")
-public class Containts {
+@Table(name="profile")
+public class Profile {
     @Id
     @GeneratedValue
     @Type(type = "org.hibernate.type.UUIDCharType")
@@ -24,17 +22,22 @@ public class Containts {
             strategy = "org.hibernate.id.UUIDGenerator"
     )
     private UUID id;
+
     @Column
-    @NonNull
-    private String contact;
+    @Type(type="org.hibernate.type.UUIDCharType")
+    private UUID userid;
+
     @Column
-    @NonNull
-    private String name;
+    private String skill;
+
     @Column
-    @NonNull
-    private String profile;
+    private String state;
+
     @Column
-    @NonNull
-    private String facebookurl;
+    private String country;
+
+    @Column
+    private String notes;
 
 }
+

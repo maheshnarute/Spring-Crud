@@ -1,4 +1,4 @@
-package com.example.SpringCurd1.student;
+package com.example.Springcrud.student;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;

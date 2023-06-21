@@ -1,4 +1,4 @@
-package com.example.SpringCurd1;
+package com.example.Springcrud;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

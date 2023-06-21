@@ -1,7 +1,5 @@
-package com.example.SpringCurd1.student;
+package com.example.Springcrud.student;
 
-
-import lombok.*;
 
 import javax.persistence.*;
 

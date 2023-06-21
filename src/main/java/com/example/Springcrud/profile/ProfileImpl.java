@@ -1,4 +1,4 @@
-package com.example.SpringCurd1.profile;
+package com.example.Springcrud.profile;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
